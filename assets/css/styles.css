@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(48, 48, 48) !important;
+}
+
+html {
+   font-size: 1.14em;
+}
+
+.container-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    /* margin-top: 20px; */
+}
+
+.luz {
+    background-color: rgb(9, 255, 0);
+    width: 70%;
+    max-width: 350px !important;
+    margin: 15px;
+    height: 20px;
+    border-radius: 30px;
+    box-shadow: 2px 2px 10px 5px rgb(9, 255, 0)!important;
+}
+
+.luz-neutral {
+    background-color: rgb(100, 100, 100);
+    max-width: 350px !important;
+    width: 70%;
+    margin: 15px;
+    height: 20px;
+    border-radius: 30px;
+    box-shadow: 2px 2px 12px 4px rgb(100, 100, 100)!important;
+}
+
+.luz-incorrecto {
+    background-color: rgb(255, 0, 0);
+    max-width: 350px !important;
+    width: 70%;
+    margin: 15px;
+    height: 20px;
+    border-radius: 30px;
+    box-shadow: 2px 2px 10px 5px rgb(255, 0, 0)!important;
+}
+
+.box-window {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 15px;
+    background-color: rgb(133, 255, 160);
+    width: 320px;
+    height: 90px;
+    text-align: center;
+    font-size: 1.8em;
+
+     font-family: "Handjet", sans-serif !important;
+    font-optical-sizing: auto !important;
+    font-weight: weight !important;
+    font-style: normal !important;
+    font-variation-settings:
+      "ELGR" 1,
+      "ELSH" 2 !important;
+}
+
+.box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 3.5em;
+    font-size: 1em;
+}
+
+.box button {
+    padding: 13px;
+    border-radius: 20px;
+    border-color: rgb(48, 48, 48);
+     font-family: "Handjet", sans-serif !important;
+    font-optical-sizing: auto !important;
+    font-weight: weight !important;
+    font-style: normal !important;
+    font-variation-settings:
+      "ELGR" 1,
+      "ELSH" 2 !important;
+}
+
+.datos {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    align-items: center;
+    color: #fff;
+    margin-top: 2em;
+}
+
+.datos-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.datos-item img {
+    width: 150px;
+    border-radius: 10px;
+}
+
+.dinero {
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.dinero-container button {
+    border-radius: 20px !important;
+    padding: 5px !important;
+    margin-top: 10px !important;
+}
+
+.datos h4 {
+    color: #fff;
+}
