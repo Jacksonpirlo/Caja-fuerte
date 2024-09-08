@@ -34,6 +34,7 @@ const vm = Vue.createApp({
 
         // Para eliminar uno por uno
         // this.pantalla = this.pantalla.slice(0, -1);
+        // pero ahun no me decido si colocarlo :)
 
         if (this.pantalla === "") {
           this.pantalla = "|"
@@ -50,22 +51,22 @@ const vm = Vue.createApp({
 
     enviar() {
       if (this.clave === "12345") {
-        this.styles.backgroundColor = "#0f0" // Color verde
+        this.styles.backgroundColor = "#0f0"
         this.styles.boxShadow = "2px 2px 10px 5px rgb(9, 255, 0) !important"
         document.getElementById("correct-sound").play()
         setTimeout(() => {
           this.ingreso = true
-          this.styles.backgroundColor = "#ccc" // Vuelve al color gris
+          this.styles.backgroundColor = "#ccc"
           this.styles.boxShadow = "2px 2px 12px 4px rgb(100, 100, 100) !important"
         }, 2000) // Duración de 2 segundos
       } else {
-        this.styles.backgroundColor = "#f00" // Color rojo
+        this.styles.backgroundColor = "#f00"
         this.styles.boxShadow = "2px 2px 10px 5px rgb(255, 0, 0) !important"
         document.getElementById("incorrect-sound").play()
         setTimeout(() => {
-          this.styles.backgroundColor = "#ccc" // Vuelve al color gris
+          this.styles.backgroundColor = "#ccc"
           this.styles.boxShadow = "2px 2px 12px 4px rgb(100, 100, 100) !important"
-        }, 2000) // Duración de 2 segundos
+        }, 2000)
       }
     },
 
@@ -111,22 +112,3 @@ const vm = Vue.createApp({
       </div>
   `
 }).mount("#app");
-
-{/* <button class="btn">1</button>
-     <button class="btn">2</button>
-     <button class="btn">3</button>
-     <button class="btn">4</button>
-     <button class="btn">5</button>
-     <button class="btn">6</button>
-     <button class="btn">7</button>
-     <button class="btn">8</button>
-     <button class="btn">9</button>
-     <button class="btn" id="borrar">x</button>
-     <button class="btn">0</button>
-      <button @click="teclas(enviar)"> Enviar </button>
-     <button class="btn" id="enviar">Enviar</button> */}
-
-     /*
-     
-     Quiero que el div con la clace luz tenga un color gris, y cuando mi contraseña sea correcta se ponga en verde y dure unos segundos para luego enviarme ese hola mundo, y si me equivoco y la contraseña es incorrecta que el div con la clase luz se ponga rojo
-     */
